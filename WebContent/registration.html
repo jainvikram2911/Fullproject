@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registration</title>
+<style type="text/css">
+body {
+	background-color: #FFFFFF;
+	background-image: url(../background.jpg);
+}
+body,td,th {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+}
+.link_button {
+	text-align: left;
+	font-size: 16%;
+}
+.link_button style {
+	font-size: 100%;
+}
+.link_button {
+	font-size: large;
+}
+.link_button style {
+	font-size: large;
+}
+.link_button style {
+	font-size: 100%;
+}
+style {
+	font-size: 24px;
+}
+.link_button style {
+	text-align: justify;
+	font-size: large;
+}
+body form table tbody tr th p {
+	font-size: 14px;
+}
+body form table tbody tr th p {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "MS Serif", "New York", serif;
+}
+body form table tbody tr th p {
+	font-size: large;
+}
+.link_button {
+	font-size: 14px;
+}
+.link_button style {
+	font-weight: normal;
+}
+.link_button style {
+	text-align: center;
+}
+body form {
+	font-size: 14px;
+	text-align: center;
+	border-top-color: #D43F55;
+	border-right-color: #D43F55;
+	border-bottom-color: #D43F55;
+	border-left-color: #D43F55;
+}
+body form table tbody tr th p {
+	font-size: 16px;
+}
+body table tr td p {
+	text-align: center;
+	color: #0000FF;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-decoration: blink;
+	font-size: 24px;
+}
+#col {
+	font-family: "Comic Sans MS", cursive;
+	color: #2A1FAA;
+}
+#m {
+	font-weight: normal;
+	font-style: italic;
+	font-family: "Lucida Console", Monaco, monospace;
+	color: #FF3F00;
+}
+body p {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+	color: #AA0000;
+	text-align: center;
+}
+#n {
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #557FFF;
+	font-size: 24px;
+}
+.o {
+	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+	font-size: 24px;
+}
+#col {
+	font-size: 18px;
+}
+#K {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 18px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	color: #D40000;
+	line-height: normal;
+	font-weight: bolder;
+	text-decoration: underline blink;
+}
+.u {
+	color: #553FAA;
+}
+#r {
+	color: #2A00FF;
+}
+.y {
+	color: #F0F0F0;
+}
+.u .style1 {
+	color: #D40000;
+}
+.u1 {
+	color: #D40000;
+}
+</style>
+<script>
+function checkpass() {
+	var pass1=document.f1.t5.value;
+	var pass2=document.f1.t6.value;
+	if(pass1!=pass2){
+		alert("password do not match"); 
+		}
+	
+}
+
+</script>
+<script>
+function notNum() {
+
+var txt= document.f1.t7.value ;
+var len= txt.length ;
+var c = txt.charAt(len-1);
+
+if(c!=0 && c!=1 && c!=2 && c!=3 && c!=4 && c!=5 && c!=6 && c!=7 && c!=8 && c!=9) { 
+alert("Enter a valid Number");
+document.f1.t7.value=txt.substring(0,len-1);
+}
+}
+</script>
+<script>
+function validation() {
+var uid=document.f1.t1.value;
+var fn=document.f1.t2.value ;
+var ln=document.f1.t3.value ;
+var em=document.f1.t4.value ;
+var ps1=document.f1.t5.value;
+var ps2=document.f1.t6.value;
+var c ;
+var i=0 ;
+var len = em.length;
+
+
+do {
+c=em.charAt(i);
+i++ ;
+if(c=='@') { break ; }
+}while(i<len);
+
+if(fn==""&&ln==""&&uid==""&&ps1==""&&ps2=="") {
+alert("Enter all the fields");
+return false ;
+}
+
+else if(fn!=""&&ln!=""&&uid!=""&&ps1!=""&&ps2!="") 
+{
+if(ps1==ps2){
+		
+if((document.f1.t7.value).length == 10) 
+{ 
+if(c=='@') 
+{
+var valRet=confirm("Do you want to continue ?");
+if(valRet==true) {
+return true ; }
+else {return false ; } }
+else 
+{
+alert("Enter Proper E-mail id");
+return false ;
+} 
+}
+else {
+alert("Mobile No. should be of 10 digits");
+return false ; } 
+}
+
+else {
+alert("Enter the empty field");
+return false ;
+}  
+
+}
+}
+</script>
+</head>
+
+<body>
+<form>
+ 
+  <table width="100%" height="88" border="0">
+    <tbody>
+    <tr>
+      <th width="100%" height="84" style="color: #2A3FFF; font-size: xx-large;" scope="col"><p><img src="../bppimt.png" width="90" height="79"></p>
+        </th>
+    </tr>
+  </tbody>
+</table>
+</form>
+<form>
+  <span class="link_button">  </span><span class="link_button">
+  <style>
+.link_button {
+  
+    
+    border-radius: 4px;
+    
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  
+    
+    background: #4479BA;
+    color: #FFF;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+          </style>
+  <a href="main.html" class="link_button" target="_self">&nbsp;   HOME &nbsp;  &nbsp;</a > <a href="ABOUT.html" class="link_button"> &nbsp;  &nbsp; ABOUT US &nbsp;  &nbsp; </a > <a href="login.html" class="link_button"> &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;DATABASE CONNECT &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;</a>
+  <a href="http://www.bppimt.ac.in" class="link_button" target="new">&nbsp;  &nbsp; BPPIMT &nbsp;  &nbsp;</a >
+   <a href="http://www.wbutech.net" class="link_button"> &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  WBUT &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;</a> 
+  <a href="http://www.wbutech.net" target="new" class="link_button">&nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  CONTACT US  &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp; </a></span>
+  <tbody>
+    <tr>
+      <th width="20%" height="38" style="font-family: Tahoma, Geneva, sans-serif" scope="col"></th>
+      <th width="20%" scope="col">
+      <p class="link_button">      
+      </th>
+      
+</form>
+<form action="Register" method="post" name="f1" onSubmit="return validation()">
+      
+  <p>**** REGISTRATION PORTAL FOR STUDENTS ****</p>
+  <center>
+  <table width="29%" height="234" border="0">
+     <tr>
+      <td height="24" class="u">UNIQUE ID<span class="u1">* </span></td>
+      <td><input type="text" name="t1"  /></td>
+    </tr>
+    <tr>
+      <td width="49%" height="24" class="u">ROLL NO<span class="style1">*</span></td>
+      <td width="51%"> <p>
+        <input type="text" name="t2" />
+      </p></td>
+    </tr>
+    
+    <tr>
+      <td height="26" class="u">EMAIL ID<span class="u1">*</span></td>
+      <td><input type="text" name="t4" /></td>
+    </tr>
+     <tr>
+      <td height="26" class="u">PASSWORD<span class="u1"><span class="u1">*</span></span></td>
+      <td><input type="password" name="t5" /></td>
+    </tr>
+     <tr>
+      <td height="27" class="u">CONFIRM PASSWORD<span class="u1">*</span></td>
+      <td><input type="password" name="t6" onmouseout="checkpass()" /></td>
+    </tr>
+    <tr>
+      <td height="24" class="u">MOBILE NO.<span class="style1">*</span></td>
+      <td><input type="text" name="t7" onKeyUp="notNum()" /></td>
+    </tr>
+    
+  </table>
+  <table width="28%" height="24" border="0">
+    
+      <td height="27"><div align="center">
+        <input type="submit" class="link_button" value="Submit" />
+      </div></td>
+      <td><div align="center">
+        <input type="reset" class="link_button" value="Reset" />
+      </div></td>
+    </tr>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p><span class="u" id="y">Note : The field marked with</span> *  <span class="y"><span class="u">are mandatory</span></span><span class="u"></span></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+
+  </center>
+</form>
+<p id="m">Developed &amp; Maintained By:</p>
+<p id="m">Go Labs</p>
+</body>
+
+</html>
+
